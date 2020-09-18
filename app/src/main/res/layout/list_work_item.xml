@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="@dimen/size_iv_working"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/light_grey"
+            android:id="@+id/ivListWork"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginLeft="@dimen/margin_bigX"
+            android:layout_height="@dimen/size_iv_working"/>
+
+    <com.vn.ntesco.views.NTesCoTextView
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/ivListWork"
+            android:layout_marginLeft="@dimen/margin_normal"
+            app:NTesCoTextViewFont="Regular"
+            android:text="CP Bac Lieu"
+            android:id="@+id/txtCompanyName"
+            android:textSize="@dimen/font_big"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/ivListWork"
+            android:layout_height="wrap_content"/>
+
+    <com.vn.ntesco.views.NTesCoTextView
+            android:layout_width="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtCompanyName"
+            android:layout_marginLeft="@dimen/margin_normal"
+            app:NTesCoTextViewFont="Regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:text="Viverra ipsum nunc aliquet bibendum enim facilisis. Tortor pretium viverra suspendisse"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/grey_line"
+            android:id="@+id/txtShortDes"
+            app:layout_constraintStart_toEndOf="@+id/ivListWork"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtShortDes"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintStart_toEndOf="@+id/ivListWork"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal">
+
+        <ImageView android:layout_width="@dimen/size_icon"
+                   android:layout_height="@dimen/size_icon"
+                   android:src="@mipmap/calendar_list_work"/>
+
+        <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:text="20/08/2019"
+                android:id="@+id/tvDate"
+                android:textSize="@dimen/font_small"
+
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:textColor="@color/grey_line"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        
+        <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                android:text="Not confirm"
+                android:textSize="@dimen/font_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_bigX"
+                android:paddingRight="@dimen/margin_bigX"
+                android:layout_height="@dimen/margin_bigXX"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

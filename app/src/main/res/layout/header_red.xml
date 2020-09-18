@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/red"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small"
+        android:layout_height="@dimen/h_header">
+    <ImageView
+            android:id="@+id/btnBack"
+            android:layout_marginLeft="@dimen/margin_normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtTitle"
+            android:layout_width="@dimen/size_button_header"
+            android:layout_height="@dimen/size_button_header"
+            android:src="@mipmap/back"/>
+
+    <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtTitle"
+            android:text="Service"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintLeft_toRightOf="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

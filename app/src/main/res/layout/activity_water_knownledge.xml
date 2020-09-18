@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NewsEventActivity">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="#f1a707"
+            android:layout_width="@dimen/width_line_label"
+            android:layout_height="match_parent">
+
+        </View>
+        <com.vn.ntesco.views.NTesCoTextView
+            android:layout_marginLeft="@dimen/margin_smallXX"
+            style="@style/ntesco_text_view_style"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/grey_brown"
+            android:text="@string/last_information"
+            android:textSize="@dimen/font_16"
+            app:NTesCoTextViewFont="Bold" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLastInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="#f1a707"
+            android:layout_width="@dimen/width_line_label"
+            android:layout_height="match_parent">
+
+        </View>
+        <com.vn.ntesco.views.NTesCoTextView
+            android:layout_marginLeft="@dimen/margin_smallXX"
+            style="@style/ntesco_text_view_style"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/grey_brown"
+            android:text="@string/popular_information"
+            android:textSize="@dimen/font_16"
+            app:NTesCoTextViewFont="Bold" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPopularInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

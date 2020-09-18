@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.ViewImageActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_close_grey"
+        android:id="@+id/ivBack"
+        android:padding="@dimen/padding_bigX"
+        android:layout_height="wrap_content"/>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_width="match_parent"
+        app:fillColor="@color/blue"
+        app:pageColor="#dcdcdc"
+        app:centered="true"
+        app:strokeWidth="0dp"
+        app:radius="@dimen/radius_indicator"
+        android:id="@+id/circleIndicator"
+        android:layout_height="wrap_content" />-->
+</FrameLayout>

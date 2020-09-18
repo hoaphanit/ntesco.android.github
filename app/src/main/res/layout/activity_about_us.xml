@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_view_pager_home"
+            android:scaleType="centerCrop"
+            />
+
+        <WebView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivFooter"
+            android:paddingRight="@dimen/padding_big"
+            android:paddingLeft="@dimen/padding_big"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_img_footer_about_us"
+            android:background="#f6f7f8"
+            />
+
+        <FrameLayout
+            android:id="@+id/ntescoLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingBottom="@dimen/padding_normal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/logo_header" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listOffice"
+            android:layout_marginTop="@dimen/margin_bigX"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

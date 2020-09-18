@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#158BE4</color>
+    <color name="colorPrimaryDark">#1173bd</color>
+    <color name="colorAccent">#1173bd</color>
+    <color name="grey">#332E2E</color>
+    <color name="blue">#158BE4</color>
+    <color name="orange">#F99A07</color>
+    <color name="orange_contact">#fc9400</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_grey">#E9494949</color>
+    <color name="red">#FF503D</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#d2d0d0</color>
+    <color name="white_alpha">#80ffffff</color>
+    <color name="grey_tab_layout">#777777</color>
+    <color name="dark_blue">#044f88</color>
+    <color name="bg_tab_layout">#fafafa</color>
+    <color name="bg_blue_send_message">#52baff</color>
+    <color name="black_light">#323232</color>
+    <color name="grey_line">#f0f0f0</color>
+    <color name="grey_brown">#535353</color>
+    <color name="black_32">#323232</color>
+    <color name="green">#02b39a</color>
+    <color name="blue_ocean">#0575a1</color>
+    <color name="pink">#e31467</color>
+    <color name="blue_medium">#1e9dd3</color>
+    <color name="pink_rose">#e35060</color>
+    <color name="purple">#6373a7</color>
+    <color name="bud_green">#85b042</color>
+    <color name="orange_crayola">#fa782f</color>
+    <color name="purple_dark">#405674</color>
+    <color name="pink_red">#be4040</color>
+    <color name="orange_portland">#ff503d</color>
+    <color name="orange_brown">#e0743c</color>
+    <color name="black_grey">#515151</color>
+    <color name="black_49">#494949</color>
+    <color name="grey_light">#e4e4e4</color>
+    <color name="grey_black">#5d5d5d</color>
+    <color name="grey_white">#ececec</color>
+    <color name="blue_sky">#65c6fe</color>
+    <color name="grey_91">#919191</color>
+    <color name="blue_light">#cfeefe</color>
+    <color name="grey_b9">#b9b9b9</color>
+    <color name="grey_99">#999999</color>
+    <color name="grey_71">#716f72</color>
+    <color name="grey_e7">#e7e7e7</color>
+    <color name="grey_7d" tools:ignore="MissingDefaultResource">#7d7d7d</color>
+    <color name="tran">#66000000</color>
+    <color name="transparent_bg">#26000000</color>
+    <color name="purple_light">#6d53a6</color>
+
+</resources>

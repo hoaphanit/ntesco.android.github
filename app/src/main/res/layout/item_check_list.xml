@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="@dimen/margin_big"
+    android:layout_height="wrap_content">
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:id="@+id/tvAttributes"
+        style="@style/ntesco_text_view_style"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner_grey"
+        android:layout_marginRight="@dimen/margin_big"
+        android:padding="@dimen/padding_normal"
+        android:textColor="@color/grey_black"
+        android:textSize="@dimen/font_normal"
+        app:NTesCoTextViewFont="Regular" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/rvAttributes"
+        android:layout_height="wrap_content"/>
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black_49"
+        android:text="@string/add_product"
+        app:NTesCoTextViewFont="SemiBold"
+        android:id="@+id/tvAddProduct"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

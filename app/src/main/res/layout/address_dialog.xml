@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/rootView"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/llAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/height_img_item_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/radius_big"
+            android:layout_marginLeft="@dimen/radius_big"
+            android:layout_marginRight="@dimen/radius_big"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_normal"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:text="@string/add_address"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16" />
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    android:src="@mipmap/ic_close_grey"
+                    android:padding="@dimen/padding_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginRight="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_big"
+                android:orientation="vertical">
+
+                <com.vn.ntesco.views.NTesCoEditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_edit_text"
+                    android:background="@drawable/radius_edittext_boder"
+                    android:hint="@string/enter_your_address"
+                    android:paddingLeft="@dimen/space_10"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_200"
+                    android:layout_above="@+id/powered_by_google"
+                    android:layout_below="@+id/search_layout"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:visibility="visible"
+                android:id="@+id/btnSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_normal"
+                android:paddingBottom="@dimen/padding_normal"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginRight="@dimen/margin_big"
+                android:background="@drawable/bg_button_orange"
+                android:gravity="center"
+                android:text="@string/select"
+                app:NTesCoTextViewFont="Bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_big" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

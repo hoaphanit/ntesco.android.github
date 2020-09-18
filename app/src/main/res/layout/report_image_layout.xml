@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_big"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImageReport"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_height="@dimen/size_img_list_work"
+        />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivPrevious"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/previous_button" />
+    <ImageView
+        android:id="@+id/ivNext"
+        android:visibility="gone"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/next_button" />
+</FrameLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_close_grey"
+        android:tint="@color/black"
+        android:padding="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <RelativeLayout
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ivClose"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:id="@+id/llSpinnerYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@drawable/bg_corner_grey_spinner"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/w_spinner_schedule"
+            android:orientation="horizontal"
+           >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_smallXX"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:scaleX="1.8"
+                android:scaleY="1.8"
+                android:src="@mipmap/ic_date" />
+
+            <Spinner
+                android:paddingTop="@dimen/padding_small"
+                android:paddingBottom="@dimen/padding_small"
+                android:id="@+id/spnYear"
+                android:spinnerMode="dropdown"
+                android:dropDownVerticalOffset="@dimen/margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spnMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_toRightOf="@+id/llSpinnerYear"
+            android:background="@drawable/bg_corner_grey_spinner"
+            android:minWidth="@dimen/w_spinner_schedule"
+            android:spinnerMode="dropdown"
+            android:dropDownVerticalOffset="@dimen/margin_normal"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small"
+            android:textAlignment="center" />
+
+        <Spinner
+            android:id="@+id/spnWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/spnMonth"
+            android:background="@drawable/bg_corner_grey_spinner"
+            android:minWidth="@dimen/w_spinner_schedule"
+            android:spinnerMode="dropdown"
+            android:dropDownVerticalOffset="@dimen/margin_normal"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_bigX"
+            android:layout_toLeftOf="@id/llWaiting"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/size_rectangle_schedule"
+                android:layout_height="@dimen/size_rectangle_schedule"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@color/blue_sky" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/waiting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llWaiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/size_rectangle_schedule"
+                android:layout_height="@dimen/size_rectangle_schedule"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@color/grey_b9" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/completed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_big"
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintTop_toBottomOf="@+id/filter">
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="@string/mon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big" />
+
+        <View
+            android:layout_width="@dimen/stroke_widthX"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:textSize="@dimen/font_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="@string/tue"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="@dimen/stroke_widthX"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:textSize="@dimen/font_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="@string/wed"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="@dimen/stroke_widthX"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:textSize="@dimen/font_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="@string/thu"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="@dimen/stroke_widthX"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:textSize="@dimen/font_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="@string/fri"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="@dimen/stroke_widthX"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:textSize="@dimen/font_big"
+            android:text="@string/sat"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <com.vn.ntesco.views.NestedRecyclerView
+        android:id="@+id/rvWorkSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout">
+
+    </com.vn.ntesco.views.NestedRecyclerView>
+
+    <GridView
+        android:id="@+id/listSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="6"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout"></GridView>
+</androidx.constraintlayout.widget.ConstraintLayout>

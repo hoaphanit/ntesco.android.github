@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/margin_big"
+    android:layout_height="wrap_content">
+    <com.vn.ntesco.views.NTesCoTextView
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/margin_big"
+        android:id="@+id/tvAttributesLabel"
+        style="@style/ntesco_text_view_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner_grey"
+        android:padding="@dimen/padding_normal"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey_black"
+        android:textSize="@dimen/font_normal"
+        app:NTesCoTextViewFont="Regular" />
+    <com.vn.ntesco.views.NTesCoEditText
+        android:layout_weight="1"
+        android:hint="@string/current_status"
+        android:id="@+id/edtInputAttribute"
+        android:layout_width="0dp"
+        android:imeOptions="actionDone"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner_grey"
+        android:padding="@dimen/padding_normal"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/font_normal"
+        />
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_big"
+    android:layout_marginRight="@dimen/margin_big"
+    android:layout_marginBottom="@dimen/margin_big"
+    android:orientation="vertical">
+    <com.vn.ntesco.views.NTesCoTextView
+        android:textSize="@dimen/font_big"
+        style="@style/ntesco_text_view_style"
+        android:id="@+id/tvTitle"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:textColor="@color/black_light"
+        app:NTesCoTextViewFont="Bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="@dimen/width_line_label"
+            android:layout_height="match_parent"
+            android:background="#f1a707"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtName"
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_smallXX"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_16"
+            app:NTesCoTextViewFont="Regular"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:id="@+id/txtAddress"
+        style="@style/ntesco_text_view_style"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:drawableLeft="@mipmap/ic_location_orange"
+        android:drawablePadding="@dimen/padding_normal"
+        android:text="39B Truong Son street, Ward 4, Tan Binh District , HCMC Viet Nam"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/font_big"
+        app:NTesCoTextViewFont="Regular"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal">
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtMobile"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_phone_orange"
+            android:drawablePadding="@dimen/padding_normal"
+            android:text="028 6297 3952"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_big"
+            app:NTesCoTextViewFont="Regular"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtFax"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_printer_orange"
+            android:drawablePadding="@dimen/padding_normal"
+            android:text="028 6297 3952"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_big"
+            app:NTesCoTextViewFont="Regular"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtEmail"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_mail_orange"
+            android:drawablePadding="@dimen/padding_normal"
+            android:text="info@ntesco.com"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_big"
+            app:NTesCoTextViewFont="Regular"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtWebSite"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_website"
+            android:drawablePadding="@dimen/padding_normal"
+            android:text="028 6297 3952"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_big"
+            app:NTesCoTextViewFont="Regular"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

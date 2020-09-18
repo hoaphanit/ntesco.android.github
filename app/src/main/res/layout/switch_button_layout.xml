@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/radius_bigX"
+    app:cardElevation="@dimen/radius_small"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/padding_extra_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/leftSwitchButton"
+            style="@style/ntesco_text_view_style"
+            android:background="@drawable/bg_switch_button_selector"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingHorizontal="@dimen/padding_big"
+            android:paddingBottom="@dimen/padding_small"
+            android:text="@string/new_report"
+            android:textAlignment="center"
+            android:textColor="@drawable/text_color_switch_button"
+            app:NTesCoTextViewFont="Regular" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/centerSwitchButton"
+            style="@style/ntesco_text_view_style"
+            android:background="@drawable/bg_switch_button_selector"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingHorizontal="@dimen/padding_normal"
+            android:textAlignment="center"
+            android:textColor="@drawable/text_color_switch_button"
+            android:visibility="visible"
+            app:NTesCoTextViewFont="Regular" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/rightSwitchButton"
+            style="@style/ntesco_text_view_style"
+            android:paddingTop="@dimen/padding_small"
+            android:background="@drawable/bg_switch_button_selector"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingHorizontal="@dimen/padding_normal"
+            android:textAlignment="center"
+            android:textColor="@drawable/text_color_switch_button"
+            app:NTesCoTextViewFont="Regular" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

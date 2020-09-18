@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">NTesco</string>
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="account">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="last_name">Họ</string>
+    <string name="first_name">Tên</string>
+    <string name="user_name">Tên đăng nhập</string>
+    <string name="user_name_hint">Tên đăng nhập</string>
+    <string name="reenter_pass">Xác nhận mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="country">Quốc gia</string>
+    <string name="location">Vị trí</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="company">Công ty</string>
+    <string name="about_us">Giới thiệu</string>
+    <string name="service">Dịch vụ</string>
+    <string name="news_event">Tin tức &amp; Sự kiện</string>
+    <string name="solution_application">Giải pháp cho ứng dụng</string>
+    <string name="chemical_calculation">Tính toán chi phí hóa chất</string>
+    <string name="water_treatment_knowledge">Kiến thức xử lý nước</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="title">Tiêu đề</string>
+    <string name="content">Nội dung</string>
+    <string name="send">Gửi</string>
+    <string name="popular_information">Thông tin phổ biến </string>
+    <string name="last_information">Thông tin mới nhất</string>
+    <string name="latest_news_event">Tin tức &amp; sự kiện mới nhất</string>
+    <string name="popular_topic">Tin tức phổ biến</string>
+    <string name="notification_detail">Chi tiết thông báo</string>
+    <string name="see_more_product">* Click vào ô tròn để tham khảo thêm thông tin sản phẩm.</string>
+    <string name="view_more">Xem thêm</string>
+    <string name="want_more_info">* Click vào chatbox nếu cần thêm thông tin</string>
+    <string name="chemical_name">Tên hóa chất</string>
+    <string name="information_chemical_name">(Thông tin từ nhà cung cấp)</string>
+    <string name="powder_a1">Dạng bột</string>
+    <string name="liquid_a2">Dạng lỏng</string>
+    <string name="chemical_type_a">Loại hóa chất</string>
+    <string name="chemical_power_b1">Nồng độ hóa chất dạng bột</string>
+    <string name="chemical_stock_solution_b2">Nồng độ % hóa chất</string>
+    <string name="specific_gravity_sg">Tỷ trọng</string>
+    <string name="required_chemical_concentration">Liều lượng hóa chất theo yêu cầu</string>
+    <string name="water_flow_rate">Lưu lượng nước</string>
+    <string name="cost_of_chemical">Chi phí hóa chất</string>
+    <string name="calculator">Tính toán</string>
+    <string name="chemical_pump_selected_dosing">Lưu lượng bơm hóa chất:</string>
+    <string name="mix_chemical">Pha hóa chất:</string>
+    <string name="gram_with_1_lite_water">gram với 1 lít nước</string>
+    <string name="cost_chemical">Chi phí hóa chất:</string>
+    <string name="vnd_m3">VND/m3</string>
+    <string name="usd_m3">USD/m3</string>
+    <string name="about_information_calculation">* Kết quả tính có thể có khác biệt trên thực tế</string>
+    <string name="list_work">Danh sách công việc</string>
+    <string name="calendar">Lịch làm việc</string>
+    <string name="notification">Thông báo</string>
+    <string name="report">Báo cáo</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="all_list_work">Tất cả công việc</string>
+    <string name="my_list_work">Công việc của tôi</string>
+    <string name="customer_name">Tên khách hàng</string>
+    <string name="raw_water_type">Nguồn nước cấp vào</string>
+    <string name="products">Các sản phẩm</string>
+    <string name="error_report">Chi tiết sự cố</string>
+    <string name="date_of_maintenance">Ngày hẹn bảo trì</string>
+    <string name="cancel">Huỷ</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="submit">Gửi</string>
+    <string name="upload_image_containing_problem">Tải lên các file ảnh về sự cố</string>
+    <string name="contact_with_ntesco">liên hệ với ntesco</string>
+    <string name="direction_of_ntesco">Hướng dẫn của NTESCO</string>
+    <string name="ntesco_address_vn">39B Truong Son street, Ward 4, Tan Binh District , HCMC Viet Nam</string>
+    <string name="connect_via_social_network">Kết nối bằng mạng xã hội</string>
+    <string name="facebook">Facebook</string>
+    <string name="linked_in">Linked In</string>
+    <string name="twitter">Twitter</string>
+    <string name="youtube">Youtube</string>
+    <string name="default_notification_channel_id">2019</string>
+    <string name="edit_profile">Chỉnh sửa tài khoản</string>
+    <string name="update_profile">Cập nhật</string>
+    <string name="change_password_">Đổi mật khẩu?</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="current_password">Mật khâủ hiện tại</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_new_password">Xác nhận mật khẩu mới</string>
+    <string name="alert">Thông báo</string>
+    <string name="ok">Đồng ý</string>
+    <string name="from_date">Từ ngày</string>
+    <string name="to_date">Đến ngày</string>
+    <string name="complete">Hoàn thành</string>
+    <string name="enter_email_to_reset">Vui lòng nhập email đã đăng ký để đặt lại mật khẩu của bạn</string>
+    <string name="registered_email">email đã đăng ký</string>
+    <string name="add_address">Vị trí</string>
+    <string name="enter_your_address">Nhập địa chỉ của bạn</string>
+    <string name="type">Nhập</string>
+    <string name="select">Chọn</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="view_report">Xem báo cáo</string>
+    <string name="not_confirm">Chưa xác nhận</string>
+    <string name="confirmed">Đã xác nhận</string>
+    <string name="completed">Đã hoàn thành</string>
+    <string name="canceled">Đã huỷ</string>
+    <string name="report_problem">Báo cáo vấn đề</string>
+    <string name="get_current_location">Lấy vị trí hiện tại</string>
+    <string name="add">+ Thêm</string>
+    <string name="waiting">Đang chờ</string>
+    <!-- message alert -->
+    <string name="user_name_is_empty">Vui lòng nhập Tên đăng nhập</string>
+    <string name="password_is_empty">Vui lòng nhập Mật khẩu</string>
+    <string name="re_enter_password_is_empty">Vui lòng nhập Xác nhận mật khẩu</string>
+    <string name="first_name_is_empty">Vui lòng nhập Tên của bạn</string>
+    <string name="last_name_is_empty">Vui lòng nhập Họ của bạn</string>
+    <string name="current_password_is_empty">Vui lòng nhập Mật khẩu hiện tại</string>
+    <string name="password_confirm_pass_not_similar">Mật khẩu và Xác nhận mật khẩu không trùng khớp với nhau</string>
+    <string name="email_is_invalid">Email không đúng định dạng</string>
+    <string name="email_is_empty">Vui lòng nhập Email</string>
+    <string name="country_is_empty">Vui lòng nhập Quốc gia</string>
+    <string name="location_is_empty">Vui lòng nhập Vị trí</string>
+    <string name="phone_is_empty">Vui lòng nhập Số điện thoại</string>
+    <string name="company_is_empty">Vui lòng nhập Tên công ty</string>
+    <string name="current_pass_is_empty">Vui lòng nhập Mật khẩu hiện tại</string>
+    <string name="new_pass_is_empty">Vui lòng nhập Mật khẩu mới</string>
+    <string name="verify_pass_is_empty">Vui lòng nhập Xác nhận mật khẩu mới</string>
+    <string name="new_password_confirm_pass_not_similar">Mật khẩu mới và Xác nhận mật khẩu mới không trùng khớp với nhau</string>
+    <string name="new_password_length_longer_6">Mật khẩu mới phải nhập ít nhất 6 kí tự</string>
+    <string name="error_report_is_empty">Vui lòng nhập Báo cáo lỗi của bạn</string>
+    <string name="image_error_is_not_uploaded">Vui lòng tải lên Hình ảnh</string>
+    <string name="raw_water_is_not_selected">Vui lòng chọn Kiểu bơm</string>
+    <string name="product_is_not_selected">Vui lòng chọn Sản phẩm</string>
+    <string name="location_is_not_selected">Vui lòng chọn Vị trí</string>
+    <string name="full_name_is_empty">Vui lòng nhập Họ và Tên</string>
+    <string name="title_contact_is_empty">Vui lòng nhập Tiêu đề</string>
+    <string name="content_contact_is_empty">Vui lòng nhập Nội dung</string>
+    <string name="from_date_is_not_select">Vui lòng chọn Từ ngày</string>
+    <string name="to_date_is_not_select">Vui lòng nhập Đến ngày</string>
+    <string name="customer_name_is_empty">Vui lòng nhập Tên của bạn</string>
+    <string name="network_error">Lỗi kết nối mạng!</string>
+    <string name="first_name_length_longer_2">Tên của bạn phải nhập ít nhất 2 kí tự</string>
+    <string name="last_name_length_longer_2">Họ của bạn phải nhập ít nhất 2 kí tự</string>
+    <string name="country_length_longer_2">Quốc gia phải ít nhất nhập 2 kí tự</string>
+    <string name="location_length_longer_2">Vị trí phải ít nhất nhập 2 kí tự</string>
+    <string name="company_length_longer_2">Tên công ty phải nhập ít nhất 2 kí tự</string>
+    <string name="chemical_name_is_empty">Vui lòng nhập Tên hóa chất</string>
+    <string name="concentration_is_empty">Vui lòng nhập Nồng độ</string>
+    <string name="specific_gravity_is_empty">Vui lòng nhập Tỷ trọng</string>
+    <string name="required_chemical_is_empty">Vui lòng nhập Nồng độ hóa chất cần thiết</string>
+    <string name="water_flow_rate_is_empty">Vui lòng nhập Lưu lượng</string>
+    <string name="cost_chemical_is_empty">Vui lòng nhập Chi phí của hóa chất</string>
+    <string name="chemical_stock_is_empty">Vui lòng nhập Dung dịch hóa chất</string>
+    <string name="phone_number_length_minium_10">Số điện thoại phải nhập ít nhất 10 ký tự</string>
+    <string name="phone_number_contain_special_character">Số điện thoại không chứa ký tự đặc biệt</string>
+    <string name="address_not_select">Vui lòng chọn địa chỉ</string>
+    <string name="user_is_log_in_other_divice">Tài khoản đã đăng nhập trên thiết bị khác</string>
+    <string name="type_your_message">Nhập tin nhắn của bạn...</string>
+    <string name="new_report">Mới</string>
+    <string name="incomplete">Chưa hoàn thành</string>
+    <string name="forms_processing">Hình thức xử lý</string>
+    <string name="warranty_status">Tình trạng bảo hành</string>
+    <string name="longer_warranty">Còn bảo hành</string>
+    <string name="out_of_warranty">Hết bảo hành</string>
+    <string name="employees_handling">Nhân viên xử lý</string>
+    <string name="implement">Thực hiện</string>
+    <string name="upload_image_processing">Tải lên các file ảnh về sản phẩm đã xử lý</string>
+    <string name="note">Ghi chú</string>
+    <string name="review_comment">Đánh giá và nhận xét</string>
+    <string name="hint_review_comment">Nhập đánh giá và nhận xét của bạn</string>
+    <string name="forms_processing_is_not_selected">Vui lòng chọn hình thức xử lý</string>
+    <string name="warranty_status_is_not_selected">Vui lòng chọn tình trạng bảo hành</string>
+    <string name="product_image_processed_is_empty">Vui lòng tải lên hình ảnh sản phẩm đang xử lý</string>
+    <string name="note_is_empty">Vui lòng nhập ghi chú</string>
+    <string name="customer_comment_is_empty">Vui lòng nhập đánh giá của bạn</string>
+    <string name="check_list">Danh mục</string>
+    <string name="product_specification">Thông số sản phẩm</string>
+    <string name="current_status">Tình trạng hiện tại</string>
+    <string name="delete_all_notify">Bạn có chắc chắn muốn xoá hết thông báo?</string>
+    <string name="delete_all">Xoá tất cả</string>
+    <string name="view_detail">Xem chi tiết</string>
+    <string name="add_product">+ Thêm sản phẩm</string>
+    <string name="add_product_specification">+ Thêm thông số sản phẩm</string>
+
+    <!-- message no data -->
+    <string name="no_data">Chưa có dữ liệu</string>
+
+    <string-array name="main_tab_layout">
+        <item>Trang chủ</item>
+        <item>Tin nhắn</item>
+        <item>Thông báo</item>
+        <item>Liên hệ</item>
+    </string-array>
+
+    <string-array name="home_category">
+        <item>Giới thiệu</item>
+        <item>Dịch vụ</item>
+        <item>Tin tức &amp; Sự kiện</item>
+        <item>Giải pháp cho ứng dụng</item>
+        <item>Tính toán chi phí hóa chất</item>
+        <item>Kiến thức xử lý nước</item>
+
+    </string-array>
+
+    <!-- Google map -->
+    <string name="google_maps_key">AIzaSyBrwOR7fBKBr1JMpFr6r1FX9UnbcY16qcU</string>
+    <!-- Facebook -->
+    <string name="FACEBOOK_APP_ID">1396197847209627</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">b5df65415552b3cd3b4dff6adfcfc4f0</string>
+
+    <string name="mon">Thứ hai</string>
+    <string name="tue">Thứ ba</string>
+    <string name="wed">Thứ tư</string>
+    <string name="thu">Thứ năm</string>
+    <string name="fri">Thứ sáu</string>
+    <string name="sat">Thứ bảy</string>
+
+
+    <string-array name="month">
+        <item>Tháng 1</item>
+        <item>Tháng 2</item>
+        <item>Tháng 3</item>
+        <item>Tháng 4</item>
+        <item>Tháng 5</item>
+        <item>Tháng 6</item>
+        <item>Tháng 7</item>
+        <item>Tháng 8</item>
+        <item>Tháng 9</item>
+        <item>Tháng 10</item>
+        <item>Tháng 11</item>
+        <item>Tháng 12</item>
+    </string-array>
+
+
+    <string-array name="weeks">
+        <item>Tuần  </item>
+        <item>Tuần 1</item>
+        <item>Tuần 2</item>
+        <item>Tuần 3</item>
+        <item>Tuần 4</item>
+        <item>Tuần 5</item>
+    </string-array>
+    <string-array name="type_user">
+        <item>Khách hàng </item>
+        <item>Kỹ thuật</item>
+        <item>Quản lý</item>
+        <item>Nhân viên</item>
+    </string-array>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+    <string name="launch_activity">Launch activity</string>
+    <string name="location_unknown">Location unknown</string>
+    <string name="location_updates_label">Location Updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for corefunctionality.</string>
+    <string name="settings">Settings</string>
+    <string name="new_text">Mới</string>
+    <string name="confirmed_text">Đã xác nhận</string>
+    <string name="processing_text">Đang xử lí</string>
+    <string name="completed_text">Hoàn thành</string>
+    <string name="chemical_liquid_b1">Nồng độ hóa chất dạng lỏng</string>
+    <string name="delete">Xoá</string>
+    <string name="processed_text">Đã xử lí</string>
+    <string name="processing_status_text">Chưa xử lý xong</string>
+    <string name="assigned">Đã giao</string>
+
+</resources>

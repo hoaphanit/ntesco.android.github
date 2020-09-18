@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stroke_width">0.5dp</dimen>
+    <dimen name="stroke_widthX">1dp</dimen>
+    <dimen name="stroke_widthXX">2dp</dimen>
+    <dimen name="stroke_shadow">3dp</dimen>
+    <dimen name="line_width">5dp</dimen>
+    <!-- Margin -->
+    <dimen name="margin_extra_small">3dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_smallXX">7dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_normalX">13dp</dimen>
+    <dimen name="margin_big">16dp</dimen>
+
+
+    <dimen name="margin_bigX">21dp</dimen>
+    <dimen name="margin_bigXX">26dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_largeX">40dp</dimen>
+    <dimen name="margin_largeXX">45dp</dimen>
+    <dimen name="margin_largeXXX">50dp</dimen>
+    <dimen name="margin_largeXXXX">56dp</dimen>
+    <dimen name="margin_bubble_popup">108dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_extra_smallXX">1dp</dimen>
+    <dimen name="padding_extra_small">3dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_smallXX">7dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_normalX">13dp</dimen>
+    <dimen name="padding_big">16dp</dimen>
+    <dimen name="padding_bigX">21dp</dimen>
+    <dimen name="padding_bigXX">26dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+    <dimen name="padding_largeX">40dp</dimen>
+    <dimen name="padding_largeXX">45dp</dimen>
+    <dimen name="padding_largeXXX">50dp</dimen>
+    <dimen name="padding_largeXXXX">56dp</dimen>
+
+
+    <!-- Font size -->
+    <dimen name="font_small">10sp</dimen>
+    <dimen name="font_normal">12sp</dimen>
+    <dimen name="font_big">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+
+    <!-- Radius -->
+    <dimen name="radius_indicator">4dp</dimen>
+    <dimen name="radius_card_view">12dp</dimen>
+    <dimen name="radius_small">6dp</dimen>
+    <dimen name="radius_normal">15dp</dimen>
+
+    <dimen name="radius_big">20dp</dimen>
+    <dimen name="radius_bigX">20dp</dimen>
+    <dimen name="radius_button">50dp</dimen>
+    <dimen name="radius_shadow">10dp</dimen>
+
+    <!-- Size -->
+    <dimen name="width_line_label">4dp</dimen>
+    <dimen name="width_logo">284dp</dimen>
+    <dimen name="height_logo">92dp</dimen>
+    <dimen name="height_login_header">178dp</dimen>
+    <dimen name="size_icon">14dp</dimen>
+    <dimen name="h_edit_text">42dp</dimen>
+    <dimen name="height_view_pager_home">180dp</dimen>
+    <dimen name="size_icon_header">45dp</dimen>
+    <dimen name="size_ic_language">25dp</dimen>
+    <dimen name="height_tab_layout">60dp</dimen>
+    <dimen name="size_ic_tab_layout_main">25dp</dimen>
+    <dimen name="h_header">64dp</dimen>
+    <dimen name="size_button_header">24dp</dimen>
+    <dimen name="h_background_avatar">200dp</dimen>
+    <dimen name="size_avatar">100dp</dimen>
+    <dimen name="edit_icon">35dp</dimen>
+    <dimen name="h_item_account_info">50dp</dimen>
+    <dimen name="w_icon_info_page">26dp</dimen>
+    <dimen name="h_icon_info_page">26dp</dimen>
+
+    <dimen name="h_icon_next">11.7dp</dimen>
+    <dimen name="w_icon_next">7dp</dimen>
+    <dimen name="h_tab_bar">34dp</dimen>
+    <dimen name="w_tab_bar">230dp</dimen>
+    <dimen name="size_iv_working">90dp</dimen>
+    <dimen name="size_img_category_home">60dp</dimen>
+    <dimen name="size_ic_send_message">50dp</dimen>
+    <dimen name="h_edit_text_multi_line">100dp</dimen>
+    <dimen name="width_button">130dp</dimen>
+    <dimen name="size_img_about_us">110dp</dimen>
+    <dimen name="height_item_news">150dp</dimen>
+    <dimen name="height_img_item_news">100dp</dimen>
+    <dimen name="width_img_item_news">130dp</dimen>
+    <dimen name="size_img_product">40dp</dimen>
+    <dimen name="height_img_product">50dp</dimen>
+    <dimen name="size_img_list_work">100dp</dimen>
+    <dimen name="width_button_switch">120dp</dimen>
+    <dimen name="size_check">20dp</dimen>
+    <dimen name="height_map">180dp</dimen>
+
+    <dimen name="h_tab_bar_item">28dp</dimen>
+    <dimen name="w_tab_bar_item">115dp</dimen>
+
+
+    <dimen name="w_spinner_schedule">120dp</dimen>
+    <dimen name="h_spinner_schedule">50dp</dimen>
+    <dimen name="size_rectangle_schedule">15dp</dimen>
+    <dimen name="size_ic_expand">50dp</dimen>
+    <dimen name="h_banner_detail_post">160dp</dimen>
+    <dimen name="height_tool_bar">45dp</dimen>
+
+
+    <dimen name="height_image">100dp</dimen>
+
+
+    <dimen name="width_image">149dp</dimen>
+    <dimen name="w_status_report">100dp</dimen>
+
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_50">50dp</dimen>
+    <dimen name="space_200">200dp</dimen>
+    <dimen name="icon_location">18dp</dimen>
+    <dimen name="size_avatar_message">30dp</dimen>
+    <dimen name="h_banner_profile">210dp</dimen>
+    <dimen name="h_img_footer_about_us">60dp</dimen>
+    <dimen name="h_arrow_bubble">8dp</dimen>
+    <dimen name="w_arrow_bubble">16dp</dimen>
+    <dimen name="w_bubble_popup">110dp</dimen>
+    <dimen name="size_circle_red">15dp</dimen>
+    <dimen name="h_item_notify">80dp</dimen>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/margin_big"
+    android:layout_marginRight="@dimen/margin_big"
+    app:cardCornerRadius="@dimen/radius_indicator"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingBottom="@dimen/padding_normal"
+            android:text="@string/alert"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_bigX"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stroke_widthX"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:background="@color/blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_big"
+                android:paddingBottom="@dimen/padding_big"
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"
+                android:visibility="gone" />
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_big"
+                android:paddingBottom="@dimen/padding_big"
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

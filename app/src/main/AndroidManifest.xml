@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vn.ntesco">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="allowBackup">
+        <activity android:name=".activity.PDFViewActivity"></activity>
+        <activity android:name=".activity.CheckListActivity" />
+        <activity android:name=".activity.ViewImageActivity" />
+        <activity android:name=".activity.DeepLinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="ntesco" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.DetailPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreateReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.ReportActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetailWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ListWorkActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChemicalCalculationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.DetailProductSolutionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetailSolutionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SolutionApplicationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetailNotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WorkScheduleActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.AddAddressDialog"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="ntesco.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver android:name=".notification.OpenNotifyReceiver" />
+
+        <service
+            android:name=".notification.NtescoMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".utils.LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.DetailWorkActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_big"
+        android:paddingRight="@dimen/padding_big">
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/tvWorkName"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:text="@string/report_problem"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_20"
+            app:NTesCoTextViewFont="Bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/width_line_label"
+                android:layout_height="match_parent"
+                android:background="#f1a707"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </View>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_smallXX"
+                android:text="@string/customer_name"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_16"
+                app:NTesCoTextViewFont="SemiBold"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoEditText
+            android:id="@+id/txtCustomerName"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:imeOptions="actionDone"
+            android:padding="@dimen/padding_normal"
+            android:singleLine="true"
+            android:textColor="@color/grey_black"
+            android:textSize="@dimen/font_normal"
+            app:NTesCoTextViewFont="Regular" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/width_line_label"
+                android:layout_height="match_parent"
+                android:background="#f1a707"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </View>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_smallXX"
+                android:text="@string/raw_water_type"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_16"
+                app:NTesCoTextViewFont="SemiBold"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReportWaterType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_big">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/width_line_label"
+                android:layout_height="match_parent"
+                android:background="#f1a707"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </View>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_smallXX"
+                android:text="@string/products"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_16"
+                app:NTesCoTextViewFont="SemiBold"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReportProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_big">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/width_line_label"
+                android:layout_height="match_parent"
+                android:background="#f1a707"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </View>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_smallXX"
+                android:text="@string/error_report"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_16"
+                app:NTesCoTextViewFont="SemiBold"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoEditText
+            android:id="@+id/edtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:gravity="top"
+            android:textColor="@color/grey_black"
+            android:minHeight="@dimen/h_edit_text_multi_line"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:paddingBottom="@dimen/padding_normal"
+            android:textSize="@dimen/font_normal" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/labelUpload"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:text="@string/upload_image_containing_problem"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_normal"
+            app:NTesCoTextViewFont="Regular" />
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/margin_big"-->
+        <!--android:id="@+id/listImg"-->
+        <!--android:layout_height="@dimen/size_img_list_work"/>-->
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="@dimen/margin_big">-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/rvImageReport"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginLeft="@dimen/margin_normal"-->
+<!--                android:layout_marginRight="@dimen/margin_normal"-->
+<!--                android:layout_height="@dimen/size_img_list_work"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:visibility="gone"-->
+<!--                android:id="@+id/ivPrevious"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left|center_vertical"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@mipmap/previous_button" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ivNext"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_gravity="right|center_vertical"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@mipmap/next_button" />-->
+<!--        </FrameLayout>-->
+        <com.vn.ntesco.views.ReportImageView
+            android:id="@+id/imageReportView"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/width_line_label"
+                android:layout_height="match_parent"
+                android:background="#f1a707"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </View>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_smallXX"
+                android:text="@string/location"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_16"
+                app:NTesCoTextViewFont="SemiBold"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@drawable/bg_corner_grey"
+            android:hint="@string/enter_your_address"
+            android:padding="@dimen/padding_normal"
+            android:textColor="@color/grey_black"
+            android:textSize="@dimen/font_normal"
+            app:NTesCoTextViewFont="Regular" />
+
+        <LinearLayout
+            android:id="@+id/llGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bigXX"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="@dimen/icon_location"
+                android:layout_height="@dimen/icon_location"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:src="@mipmap/current_location" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:id="@+id/btnGetCurrent"
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_smallXX"
+                android:text="@string/get_current_location"
+                android:textColor="#158BE4"
+                android:textSize="@dimen/font_normal"
+                app:NTesCoTextViewFont="SemiBold" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/btnSubmit"
+            style="@style/ntesco_text_view_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/font_normal"
+            android:layout_marginBottom="@dimen/margin_bigXX"
+            android:background="@drawable/bg_button_orange"
+            android:minWidth="@dimen/width_button"
+            android:paddingLeft="@dimen/padding_big"
+            android:paddingTop="@dimen/padding_smallXX"
+            android:paddingRight="@dimen/padding_big"
+            android:paddingBottom="@dimen/padding_smallXX"
+            android:text="@string/submit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            app:NTesCoTextViewFont="Bold" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

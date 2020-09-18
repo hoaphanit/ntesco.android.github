@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "602964362211",
+    "firebase_url": "https://ntesco-cb270.firebaseio.com",
+    "project_id": "ntesco-cb270",
+    "storage_bucket": "ntesco-cb270.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602964362211:android:4a5fc86dd02e7287",
+        "android_client_info": {
+          "package_name": "com.vn.ntesco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602964362211-l1bgc5a9pqv1t12b4uu7evvd0ca5feg5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vn.ntesco",
+            "certificate_hash": "8e901588aabcdca9d9e3b41f9a6a5e255f7450a4"
+          }
+        },
+        {
+          "client_id": "602964362211-6a56tddjtlf7jvs2e430ltkm28g2eam4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vn.ntesco",
+            "certificate_hash": "07a0782fa214d2873cfb114d5e4f1785211304a8"
+          }
+        },
+        {
+          "client_id": "602964362211-bf9o3fsgs84f3bj4rq34eh2emccc7bu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vn.ntesco",
+            "certificate_hash": "567d1e7fc1befba466398a575536d397d23db201"
+          }
+        },
+        {
+          "client_id": "602964362211-7ppr6var1iqmqg03q5gisvb83pa8es7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8i5ogscCASEuHr_mypzSPrMHOKy3pKx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602964362211-7ppr6var1iqmqg03q5gisvb83pa8es7f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602964362211-qnu3tq254r42rp196ffkb391kuhtau1p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.verztectmedia.NTESCO"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

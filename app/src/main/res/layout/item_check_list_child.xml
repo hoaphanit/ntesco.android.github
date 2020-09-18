@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:orientation="horizontal">
+        <com.vn.ntesco.views.NTesCoEditText
+            android:id="@+id/edtProductSpecification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="@dimen/h_edit_text"
+            android:background="@drawable/bg_corner_grey"
+            android:padding="@dimen/padding_normal"
+            android:hint="@string/product_specification"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_big"
+            android:layout_marginRight="@dimen/margin_big"
+            />
+        <com.vn.ntesco.views.NTesCoEditText
+            android:id="@+id/edtProductStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/h_edit_text"
+            android:layout_weight="1"
+            android:background="@drawable/bg_corner_grey"
+            android:padding="@dimen/padding_normal"
+            android:hint="@string/current_status"
+            android:maxLength="12"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_big"
+            />
+    </LinearLayout>
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black_49"
+        app:NTesCoTextViewFont="SemiBold"
+        android:text="@string/add_product_specification"
+        android:id="@+id/tvAddProductSpecification"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

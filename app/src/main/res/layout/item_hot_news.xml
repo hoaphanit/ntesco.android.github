@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="@dimen/radius_card_view"
+    app:cardElevation="@dimen/radius_shadow"
+    app:cardUseCompatPadding="true"
+    >
+
+    <ImageView
+        android:id="@+id/ivHotNews"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_news"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_home" />
+    <com.vn.ntesco.views.NTesCoTextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvTitleNews"
+        android:padding="@dimen/padding_normal"
+        android:gravity="bottom"
+        android:background="@drawable/bg_transparent"
+        android:layout_gravity="bottom"
+        style="@style/ntesco_text_view_style"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:text="Celebrate the 10th anniversary of Ntesco ltd had taken place very well."
+        android:textSize="@dimen/font_big"
+        app:NTesCoTextViewFont="Regular" />
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <com.vn.ntesco.views.ViewPagerAutoScroll
+        android:id="@+id/homeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_view_pager_home">
+
+    </com.vn.ntesco.views.ViewPagerAutoScroll>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_smallXX"
+        android:layout_width="match_parent"
+        app:fillColor="@color/blue"
+        app:pageColor="#dcdcdc"
+        app:centered="true"
+        app:strokeWidth="0dp"
+        app:radius="@dimen/radius_indicator"
+        android:id="@+id/circleIndicator"
+        android:layout_height="wrap_content" />
+   <!-- <LinearLayout
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/llAboutUs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/size_img_category_home"
+                android:layout_height="@dimen/size_img_category_home"
+                android:src="@mipmap/about_us" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/about_us"
+                app:NTesCoTextViewFont="Regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/llService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/size_img_category_home"
+                android:layout_height="@dimen/size_img_category_home"
+                android:src="@mipmap/service" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/service"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/llNewEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/size_img_category_home"
+                android:layout_height="@dimen/size_img_category_home"
+                android:src="@mipmap/new_event" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:textAlignment="center"
+                style="@style/ntesco_text_view_style"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/news_event"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/llSolutionApplication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/size_img_category_home"
+                android:layout_height="@dimen/size_img_category_home"
+                android:src="@mipmap/solution_application" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:textAlignment="center"
+                style="@style/ntesco_text_view_style"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/solution_application"
+                app:NTesCoTextViewFont="Regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/llChemicalCalculation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/size_img_category_home"
+                android:layout_height="@dimen/size_img_category_home"
+                android:src="@mipmap/chemical_calculation" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:textAlignment="center"
+                style="@style/ntesco_text_view_style"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/chemical_calculation"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/llWaterKnowledge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/size_img_category_home"
+                android:layout_height="@dimen/size_img_category_home"
+                android:src="@mipmap/water_knowledge" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:textAlignment="center"
+                style="@style/ntesco_text_view_style"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/water_treatment_knowledge"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+    </LinearLayout>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/margin_large"
+        android:id="@+id/rvCategoryHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

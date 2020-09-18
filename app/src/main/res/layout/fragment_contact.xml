@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/white"
+    tools:context=".fragment.ContactFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_big"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:text="VIETNAM OFFICE"
+                android:textAllCaps="true"
+                android:textColor="@color/orange_contact"
+                android:textSize="@dimen/font_18"
+                app:NTesCoTextViewFont="Bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="@dimen/width_line_label"
+                    android:layout_height="match_parent"
+                    android:background="#f1a707"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </View>
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_marginLeft="@dimen/margin_smallXX"
+                    android:textColor="@color/grey_brown"
+                    android:textSize="@dimen/font_16"
+                    app:NTesCoTextViewFont="Bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:drawableLeft="@mipmap/ic_location_orange"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="@string/ntesco_address_vn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"
+                app:NTesCoTextViewFont="Regular"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_big">
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_phone_orange"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:text="028 6297 3952"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    app:NTesCoTextViewFont="Regular"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_printer_orange"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:text="028 6297 3952"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    app:NTesCoTextViewFont="Regular"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:drawableLeft="@mipmap/ic_mail_orange"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="info@ntesco.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"
+                app:NTesCoTextViewFont="Regular"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="@dimen/width_line_label"
+                    android:layout_height="match_parent"
+                    android:background="#f1a707"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </View>
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_marginLeft="@dimen/margin_smallXX"
+                    android:textColor="@color/grey_brown"
+                    android:textSize="@dimen/font_16"
+                    app:NTesCoTextViewFont="Bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:drawableLeft="@mipmap/ic_location_orange"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="@string/ntesco_address_vn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"
+                app:NTesCoTextViewFont="Regular"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_big">
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_phone_orange"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:text="028 6297 3952"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    app:NTesCoTextViewFont="Regular"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_printer_orange"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:text="028 6297 3952"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    app:NTesCoTextViewFont="Regular"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:drawableLeft="@mipmap/ic_mail_orange"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="info@ntesco.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"
+                app:NTesCoTextViewFont="Regular"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_big"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:textAllCaps="true"
+                android:textColor="@color/orange_contact"
+                android:textSize="@dimen/font_18"
+                app:NTesCoTextViewFont="Bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="@dimen/width_line_label"
+                    android:layout_height="match_parent"
+                    android:background="#f1a707"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </View>
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_marginLeft="@dimen/margin_smallXX"
+                    android:textColor="@color/grey_brown"
+                    android:textSize="@dimen/font_16"
+                    app:NTesCoTextViewFont="Bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:drawableLeft="@mipmap/ic_location_orange"
+                android:drawablePadding="@dimen/padding_normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"
+                app:NTesCoTextViewFont="Regular"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:background="@color/grey_line"
+            android:paddingLeft="@dimen/padding_big"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingBottom="@dimen/padding_normal"
+            android:text="@string/direction_of_ntesco"
+            android:textColor="#034498"
+            android:textAllCaps="true"
+            android:textSize="@dimen/font_big"
+            app:NTesCoTextViewFont="SemiBold"
+            app:layout_constraintTop_toTopOf="parent" />
+        <fragment
+            android:id="@+id/map"
+            android:name="com.vn.ntesco.fragment.WorkaroundMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_map"
+             />
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@color/grey_line"
+            android:paddingLeft="@dimen/padding_big"
+            android:paddingTop="@dimen/padding_normal"
+            android:textAllCaps="true"
+            android:paddingBottom="@dimen/padding_normal"
+            android:text="@string/contact_with_ntesco"
+            android:textColor="#034498"
+            android:textSize="@dimen/font_big"
+            app:NTesCoTextViewFont="SemiBold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_big"
+            android:orientation="vertical">
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_normal" />
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_edit_text"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/bg_corner_grey"
+                android:imeOptions="actionNext"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal"
+                android:singleLine="true"
+                android:textSize="@dimen/font_big" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/email"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_normal" />
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_edit_text"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/bg_corner_grey"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal"
+                android:singleLine="true"
+                android:textSize="@dimen/font_big" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/title"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_normal" />
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_edit_text"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/bg_corner_grey"
+                android:imeOptions="actionNext"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal"
+                android:singleLine="true"
+                android:textSize="@dimen/font_big" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/content"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_normal" />
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/bg_corner_grey"
+                android:gravity="top"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:minHeight="@dimen/h_edit_text_multi_line"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingTop="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal"
+                android:paddingBottom="@dimen/padding_normal"
+                android:textSize="@dimen/font_big" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_bigXX"
+                android:layout_marginTop="@dimen/margin_bigXX"
+                android:background="@drawable/bg_button_orange"
+                android:minWidth="@dimen/width_button"
+                android:paddingLeft="@dimen/padding_big"
+                android:paddingTop="@dimen/padding_smallXX"
+                android:paddingRight="@dimen/padding_big"
+                android:id="@+id/btnSend"
+                android:paddingBottom="@dimen/padding_smallXX"
+                android:text="@string/send"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:NTesCoTextViewFont="Bold" />
+        </LinearLayout>
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:background="@color/grey_line"
+            android:paddingLeft="@dimen/padding_big"
+            android:paddingTop="@dimen/padding_normal"
+            android:textAllCaps="true"
+            android:paddingBottom="@dimen/padding_normal"
+            android:text="@string/connect_via_social_network"
+            android:textColor="#034498"
+            android:textSize="@dimen/font_big"
+            app:NTesCoTextViewFont="SemiBold"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_margin="@dimen/margin_big"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvFacebook"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="@string/facebook"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/black_49"
+                android:drawableLeft="@mipmap/ic_facebook"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content" />
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_margin="@dimen/margin_big"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvLinked"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="@string/linked_in"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/black_49"
+                android:drawableLeft="@mipmap/ic_linked"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content" />
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_margin="@dimen/margin_big"
+                android:layout_below="@id/tvFacebook"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvTwitter"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="@string/twitter"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/black_49"
+                android:drawableLeft="@mipmap/ic_twitter"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content" />
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_big"
+                android:layout_below="@id/tvFacebook"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvYoutube"
+                android:drawablePadding="@dimen/padding_normal"
+                android:text="@string/youtube"
+                android:textSize="@dimen/font_big"
+                android:textColor="@color/black_49"
+                android:drawableLeft="@mipmap/ic_youtube"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

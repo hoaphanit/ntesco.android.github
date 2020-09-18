@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.SelectLanguageActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/main_header" />
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:id="@+id/labelSelectLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/select_language"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/font_20"
+        app:NTesCoTextViewFont="Bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <LinearLayout
+        android:id="@+id/llVietNamese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/llEnglish"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelSelectLanguage">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/viet_nam_flag" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/font_16"
+            android:layout_height="wrap_content"
+            android:text="@string/vietnamese"
+            android:textColor="@color/dark_blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEnglish"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/llVietNamese"
+        app:layout_constraintTop_toBottomOf="@id/labelSelectLanguage">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/america_flag" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/font_16"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:textColor="@color/dark_blue" />
+    </LinearLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@+id/llVietNamese"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/map_world" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

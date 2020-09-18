@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:layout_marginLeft="@dimen/margin_big"
+    android:layout_marginRight="@dimen/margin_big"
+    android:layout_marginBottom="@dimen/margin_big"
+    android:orientation="horizontal"
+    app:cardElevation="@dimen/stroke_width"
+    app:cardCornerRadius="@dimen/radius_card_view"
+    app:cardBackgroundColor="#fbfbfb"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivHotNews"
+            android:layout_width="@dimen/width_img_item_news"
+            android:layout_height="@dimen/height_img_item_news"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_home" />
+
+        <LinearLayout
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_big"
+            android:paddingLeft="@dimen/padding_big"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:id="@+id/tvTitleNews"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/ntesco_text_view_style"
+                android:text="NTESCO grand opening at Nguyen Hue, Distric 1, Ho Chi Minh City"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_normal"
+                app:NTesCoTextViewFont="Regular"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:id="@+id/tvDateNews"
+                    style="@style/ntesco_text_view_style"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_tab_layout"
+                    android:textSize="@dimen/font_normal"
+                    android:text="@string/send"
+                    app:NTesCoTextViewFont="Regular"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleNews" />
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:drawableLeft="@mipmap/ic_view"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:id="@+id/tvNumberView"
+                    style="@style/ntesco_text_view_style"
+                    android:text="205"
+                    android:textColor="@color/grey_tab_layout"
+                    android:textSize="@dimen/font_normal"
+                    app:NTesCoTextViewFont="Regular"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleNews" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

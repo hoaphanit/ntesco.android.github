@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_big"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_marginLeft="@dimen/margin_big"
+            android:id="@+id/flImgListWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_grey"
+            android:padding="@dimen/stroke_widthX"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/size_img_list_work"
+                android:layout_height="@dimen/size_img_list_work"
+                android:id="@+id/ivListWork"
+                android:scaleType="centerCrop"
+                />
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_toRightOf="@+id/flImgListWork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_big"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/flImgListWork"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.vn.ntesco.views.NTesCoTextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:id="@+id/tvWorkName"
+                android:lines="1"
+                android:ellipsize="end"
+                style="@style/ntesco_text_view_style"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_big"
+                app:NTesCoTextViewFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:layout_marginTop="@dimen/margin_small"
+                app:layout_constraintTop_toBottomOf="@id/tvWorkName"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:id="@+id/tvWorkDescription"
+                android:minLines="2"
+                android:lines="2"
+                android:ellipsize="end"
+                style="@style/ntesco_text_view_style"
+                android:layout_width="match_parent"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_normal"
+                app:NTesCoTextViewFont="Regular"
+                />
+            <LinearLayout
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/ic_date"
+                    android:id="@+id/tvWorkDate"
+                    android:drawablePadding="@dimen/padding_extra_small"
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/grey_tab_layout"
+                    android:textSize="@dimen/font_small"
+                    app:NTesCoTextViewFont="Regular" />
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:textAlignment="center"
+                    android:minWidth="@dimen/w_status_report"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tvStatusWork"
+                    android:background="@color/blue_sky"
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:paddingTop="@dimen/padding_extra_small"
+                    android:paddingBottom="@dimen/padding_extra_small"
+                    android:text="Not comfirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal"
+                    app:NTesCoTextViewFont="Regular" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <View
+        android:background="#ededed"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"/>
+</LinearLayout>

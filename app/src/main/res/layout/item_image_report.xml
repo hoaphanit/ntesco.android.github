@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/margin_big"
+    >
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/ivReport"
+        android:layout_width="@dimen/width_image"
+        android:layout_height="@dimen/height_image"
+        android:src="@mipmap/add_image" />
+
+    <ImageView
+        android:layout_gravity="right"
+        android:background="@color/transparent_bg"
+        android:id="@+id/ivClose"
+        android:tint="@color/white"
+        android:padding="@dimen/padding_smallXX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_close_grey" />
+</FrameLayout>

@@ -1,0 +1,41 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="ntesco_text_view_style">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

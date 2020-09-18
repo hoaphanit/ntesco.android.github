@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefreshLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_big"
+                android:layout_marginRight="@dimen/margin_big"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:gravity="center_vertical">
+
+                <View
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="@dimen/width_line_label"
+                    android:layout_height="match_parent"
+                    android:background="#f1a707">
+
+                </View>
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:id="@+id/labelLastest"
+                    style="@style/ntesco_text_view_style"
+                    app:NTesCoTextViewFont="Bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="@dimen/margin_smallXX"
+                    android:text="@string/last_information"
+                    android:textColor="@color/grey_brown"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+            <!-- <android.support.v4.view.ViewPager
+                 android:id="@+id/hotNewsViewPager"
+                 android:layout_width="wrap_content"
+                 android:layout_height="@dimen/height_view_pager_home">
+
+             </android.support.v4.view.ViewPager>
+             <com.viewpagerindicator.CirclePageIndicator
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="@dimen/margin_smallXX"
+                 android:layout_marginBottom="@dimen/margin_large"
+                 android:layout_width="match_parent"
+                 app:fillColor="@color/blue"
+                 app:pageColor="#dcdcdc"
+                 app:centered="true"
+                 app:strokeWidth="0dp"
+                 app:radius="@dimen/radius_indicator"
+                 android:id="@+id/circleIndicator"
+                 android:layout_height="wrap_content" />-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHotNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_item_news">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_big"
+                android:layout_marginRight="@dimen/margin_big"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:gravity="center_vertical">
+
+                <View
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="@dimen/width_line_label"
+                    android:layout_height="match_parent"
+                    android:background="#f1a707">
+
+                </View>
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:id="@+id/labelPopular"
+                    style="@style/ntesco_text_view_style"
+                    app:NTesCoTextViewFont="Bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="@dimen/margin_smallXX"
+                    android:text="@string/popular_information"
+                    android:textColor="@color/grey_brown"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPopularNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+

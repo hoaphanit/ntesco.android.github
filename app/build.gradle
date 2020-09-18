@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: "kotlin-kapt"
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.vn.ntesco"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 12
+        versionName "2.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-guava:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-java8:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+
+    // Before AndroidX
+    implementation('com.github.niorgai:StatusBarCompat:2.1.4', {
+        exclude group: 'com.android.support'
+    })
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.yun.ospl:jtabstrip:0.1.14'
+    implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.0'
+    implementation 'com.bignerdranch.android:simple-item-decoration:1.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation "net.gotev:uploadservice:3.5.2"
+//    implementation 'com.github.dhaval2404:imagepicker:1.4'
+    implementation 'com.github.dhaval2404:imagepicker-support:1.3'
+    implementation 'com.facebook.android:account-kit-sdk:5.+'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.firebase:firebase-firestore:19.0.0'
+    implementation 'com.asksira.android:bsimagepicker:1.1.0'
+    implementation 'com.github.MasayukiSuda:BubbleLayout:v1.2.0'
+    implementation 'com.airbnb:deeplinkdispatch:5.1.0'
+    kapt 'com.airbnb:deeplinkdispatch-processor:5.1.0'
+    implementation 'com.jsibbold:zoomage:1.3.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+}
+apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

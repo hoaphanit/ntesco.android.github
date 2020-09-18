@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.CheckListActivity">
+<!--    <Spinner-->
+<!--        android:id="@+id/spinnerProductsCheckList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_margin="@dimen/margin_big"-->
+<!--        android:minHeight="@dimen/h_edit_text"-->
+<!--        android:background="@drawable/bg_corner_spinner"-->
+<!--        android:textSize="@dimen/font_big"-->
+<!--        />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvGroupCheckList"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+<!--    <com.vn.ntesco.views.NTesCoTextView-->
+<!--        android:id="@+id/btnSend"-->
+<!--        style="@style/ntesco_text_view_style"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:background="@drawable/bg_button_orange"-->
+<!--        android:minWidth="@dimen/width_button"-->
+<!--        android:paddingLeft="@dimen/padding_big"-->
+<!--        android:paddingTop="@dimen/padding_smallXX"-->
+<!--        android:paddingRight="@dimen/padding_big"-->
+<!--        android:paddingBottom="@dimen/padding_smallXX"-->
+<!--        android:layout_marginTop="@dimen/margin_big"-->
+<!--        android:layout_marginBottom="@dimen/margin_big"-->
+<!--        android:text="@string/send"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:NTesCoTextViewFont="Bold" />-->
+</LinearLayout>

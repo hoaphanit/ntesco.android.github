@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vn.ntesco.views.NTesCoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvContent"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingBottom="@dimen/padding_normal"
+    android:paddingTop="@dimen/padding_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:text="@string/completed"
+    android:textColor="@color/black_light"
+    android:textSize="@dimen/font_big"
+    app:layout_constraintTop_toTopOf="parent">
+
+</com.vn.ntesco.views.NTesCoTextView>

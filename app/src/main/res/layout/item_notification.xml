@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <com.vn.ntesco.views.NtescoRevealLayout
+        android:id="@+id/swipe_reveal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right"
+        app:mode="normal">
+
+        <LinearLayout
+            android:id="@+id/right_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:id="@+id/txt_delete_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/red"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_bigX"
+                android:paddingRight="@dimen/padding_bigX"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_big"
+                android:visibility="visible"
+                app:NTesCoTextViewFont="SemiBold" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/drag_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_item_notify"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/ivIconNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_normalX"
+                android:src="@mipmap/ic_notify"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:id="@+id/tvTitleNotify"
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_normalX"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:textColor="@color/black_light"
+                app:NTesCoTextViewFont="Regular"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/ivIconNotify"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                android:id="@+id/tvDateNotify"
+                style="@style/ntesco_text_view_style"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:layout_marginRight="@dimen/margin_big"
+                android:textColor="#777777"
+                android:textSize="@dimen/font_small"
+                app:NTesCoTextViewFont="Regular"
+                app:layout_constraintLeft_toRightOf="@+id/ivIconNotify"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleNotify" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.vn.ntesco.views.NtescoRevealLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/grey_line"
+        app:layout_constraintTop_toBottomOf="@id/tvDateNotify" />
+</LinearLayout>

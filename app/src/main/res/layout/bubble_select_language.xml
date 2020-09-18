@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/padding_small"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/padding_normal"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="@dimen/h_arrow_bubble"
+    app:bl_arrowPosition="@dimen/margin_bubble_popup"
+    app:bl_arrowWidth="@dimen/w_arrow_bubble"
+    app:bl_strokeColor="#80b6b6b6"
+    app:bl_cornersRadius="@dimen/radius_small"
+    app:bl_strokeWidth="@dimen/stroke_widthX">
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/w_bubble_popup"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txt_vietnamese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/vietnamese"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/font_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stroke_width"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@color/dark_blue" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/txt_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/english"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</com.daasuu.bl.BubbleLayout>

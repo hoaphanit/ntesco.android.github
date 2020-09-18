@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:paddingTop="@dimen/padding_extra_small"
+    android:paddingBottom="@dimen/padding_extra_small">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/size_icon_header"
+        android:layout_height="@dimen/size_icon_header"
+        android:padding="@dimen/padding_normal"
+        android:src="@mipmap/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:id="@+id/tvTitleHeader"
+        style="@style/ntesco_text_view_style"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:text="@string/water_treatment_knowledge"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:NTesCoTextViewFont="SemiBold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:id="@+id/txtAdd"
+        style="@style/ntesco_text_view_style"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:gravity="right"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        android:visibility="gone"
+        app:NTesCoTextViewFont="SemiBold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivLanguage"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_big"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="@dimen/size_ic_language"
+        android:layout_height="@dimen/size_ic_language"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:src="@mipmap/language"/>
+    <com.vn.ntesco.views.NTesCoTextView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="@dimen/margin_big"
+        android:text="@string/delete_all"
+        android:visibility="gone"
+        android:id="@+id/tvDeleteAllNotify"
+        app:NTesCoTextViewFont="Bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

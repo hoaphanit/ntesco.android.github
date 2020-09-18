@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.ChemicalCalculationActivity">
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:orientation="horizontal">
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:text="@string/chemical_name"
+                android:textColor="@color/black"
+                app:NTesCoTextViewFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:text="@string/information_chemical_name"
+                android:textColor="@color/black_grey"
+                android:textSize="@dimen/font_normal"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spinnerChemicals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:minHeight="@dimen/h_edit_text"
+            android:background="@drawable/bg_corner_spinner"
+            android:textSize="@dimen/font_big"
+            />
+        <com.vn.ntesco.views.NTesCoTextView
+            android:visibility="gone"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:drawableRight="@mipmap/ic_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:textSize="@dimen/font_big"
+            android:paddingBottom="@dimen/padding_normal"
+            android:text="KMnO4"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:text="@string/chemical_type_a"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+        <com.vn.ntesco.views.NTescoSwitchButton
+            android:id="@+id/switchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_extra_small"
+            android:layout_marginRight="@dimen/margin_extra_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_weight="1"
+            app:layout_weight="1"
+            app:left_text="@string/powder_a1"
+            app:right_text="@string/liquid_a2" />
+
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:id="@+id/txtChemicalConcentration"
+            android:text="@string/chemical_power_b1"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:orientation="horizontal"
+            >
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtConcentration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_normal"
+                android:hint="@string/type"
+                android:maxLength="12"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_big"
+                app:NTesCoEditTextFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/bg_grey"
+                android:gravity="center_vertical"
+                android:text="% (W/w)"
+                android:textAlignment="center"
+                android:textColor="@color/grey_black"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/labelChemicalStockSolution"
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/chemical_stock_solution_b2"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+
+        <LinearLayout
+            android:id="@+id/chemicalStockSolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:orientation="horizontal">
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtStockSolution"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_normal"
+                android:hint="@string/type"
+                android:maxLength="12"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_big"
+                app:NTesCoEditTextFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/bg_grey"
+                android:gravity="center_vertical"
+                android:text="% (W/w)"
+                android:textAlignment="center"
+                android:textColor="@color/grey_black"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/specific_gravity_sg"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:orientation="horizontal">
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtSpecificGravity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_normal"
+                android:hint="@string/type"
+                android:maxLength="12"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_big"
+                app:NTesCoEditTextFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/bg_grey"
+                android:gravity="center_vertical"
+                android:text="kg/lite"
+                android:textAlignment="center"
+                android:textColor="@color/grey_black"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/required_chemical_concentration"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:orientation="horizontal">
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtRequiredChemical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_normal"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_big"
+                android:hint="@string/type"
+                android:maxLength="12"
+                app:NTesCoEditTextFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/bg_grey"
+                android:gravity="center_vertical"
+                android:text="ppm (mg/l)"
+                android:textAlignment="center"
+                android:textColor="@color/grey_black"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/water_flow_rate"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:background="@drawable/bg_corner_grey"
+            android:orientation="horizontal">
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtWaterFlow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_normal"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_big"
+                android:maxLength="12"
+                android:hint="@string/type"
+
+                app:NTesCoEditTextFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/bg_grey"
+                android:gravity="center_vertical"
+                android:text="m3/hr"
+                android:textAlignment="center"
+                android:textColor="@color/grey_black"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            style="@style/ntesco_text_view_style"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/cost_of_chemical"
+            android:textColor="@color/black"
+            app:NTesCoTextViewFont="Regular" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/margin_bigXX"
+            android:background="@drawable/bg_corner_grey"
+            android:orientation="horizontal">
+
+            <com.vn.ntesco.views.NTesCoEditText
+                android:id="@+id/edtCost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_normal"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/font_big"
+                android:hint="@string/type"
+                android:maxLength="12"
+                app:NTesCoEditTextFont="Regular" />
+
+            <View
+                android:layout_width="@dimen/stroke_width"
+                android:layout_height="match_parent"
+                android:background="@color/grey_light" />
+            <Spinner
+                android:id="@+id/spinnerCurrency"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:minHeight="@dimen/h_edit_text"
+                android:background="@drawable/bg_corner_spinner"
+                android:textSize="@dimen/font_big"
+                />
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:visibility="gone"
+                android:drawableRight="@mipmap/ic_arrow"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/padding_normal"
+                android:text="VND"
+                android:textAlignment="center"
+                android:textColor="@color/grey_black"
+                app:NTesCoTextViewFont="Regular" />
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/bg_grey"
+                android:gravity="center_vertical"
+                android:text="per/kg"
+                android:textAlignment="center"
+                android:textColor="@color/grey_black"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/tvCalculator"
+            style="@style/ntesco_text_view_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_bigXX"
+            android:background="@drawable/bg_button_orange"
+            android:minWidth="@dimen/width_button"
+            android:paddingLeft="@dimen/padding_big"
+            android:paddingTop="@dimen/padding_smallXX"
+            android:paddingRight="@dimen/padding_big"
+            android:paddingBottom="@dimen/padding_smallXX"
+            android:text="@string/calculator"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:NTesCoTextViewFont="Bold" />
+
+        <LinearLayout
+            android:id="@+id/llCalculatorResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_big"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="@string/chemical_pump_selected_dosing"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Regular" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:id="@+id/tvChemicalPump"
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="150"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Bold" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="l/hr"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMixChemical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:orientation="horizontal">
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="@string/mix_chemical"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Regular" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:id="@+id/tvMixChemical"
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="300"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Bold" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="@string/gram_with_1_lite_water"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:orientation="horizontal">
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="@string/cost_chemical"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Regular" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:id="@+id/tvCostChemical"
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Bold" />
+
+                <com.vn.ntesco.views.NTesCoTextView
+                    android:id="@+id/tvCurrencyUnit"
+                    style="@style/ntesco_text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="@string/vnd_m3"
+                    android:textColor="@color/black"
+                    app:NTesCoTextViewFont="Regular" />
+            </LinearLayout>
+
+            <com.vn.ntesco.views.NTesCoTextView
+                style="@style/ntesco_text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_big"
+                android:gravity="center_vertical"
+                android:text="@string/about_information_calculation"
+                android:textColor="#e18900"
+                app:NTesCoTextViewFont="Regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

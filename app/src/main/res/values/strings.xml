@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">NTesco</string>
+    <string name="login">Login</string>
+    <string name="register">Signup</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="user_name">User name</string>
+    <string name="user_name_hint">Username</string>
+    <string name="reenter_pass">Re-enter Password</string>
+    <string name="email">Email</string>
+    <string name="country">Country</string>
+    <string name="location">Location</string>
+    <string name="phone">Phone</string>
+    <string name="company">Company</string>
+    <string name="about_us">About us</string>
+    <string name="service">Service</string>
+    <string name="news_event">News &amp; Event</string>
+    <string name="solution_application">Solution application</string>
+    <string name="chemical_calculation">Chemical calculation</string>
+    <string name="water_treatment_knowledge">Water treatment Knowledge</string>
+    <string name="full_name">Full name</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="send">Send</string>
+    <string name="popular_information">Popular Information</string>
+    <string name="last_information">Latest Information</string>
+    <string name="latest_news_event">Latest News &amp; Events</string>
+    <string name="popular_topic">Popular topics</string>
+    <string name="notification_detail">Notification detail</string>
+    <string name="see_more_product">* See more product information click on circle.</string>
+    <string name="view_more">View more</string>
+    <string name="want_more_info">* If you want more information please click Chatbox</string>
+    <string name="chemical_name">Chemical name</string>
+    <string name="information_chemical_name">(Information from chemical supplies)</string>
+    <string name="powder_a1">Powder</string>
+    <string name="liquid_a2">Liquid</string>
+    <string name="chemical_type_a">Chemical type</string>
+    <string name="chemical_power_b1">Chemical concentration - Powder</string>
+
+    <string name="chemical_liquid_b1">Chemical concentration - Liquid</string>
+
+    <string name="chemical_stock_solution_b2">Chemical % stock solution</string>
+    <string name="specific_gravity_sg">Specific Gravity</string>
+    <string name="required_chemical_concentration">Require chemical concentration</string>
+    <string name="water_flow_rate">Water flow rate</string>
+    <string name="cost_of_chemical">Cost of Chemical</string>
+    <string name="calculator">Calculator</string>
+    <string name="chemical_pump_selected_dosing">Chemical pump selected dosing:</string>
+    <string name="mix_chemical">Mix chemical :</string>
+    <string name="gram_with_1_lite_water">gram with 1 lite water</string>
+    <string name="cost_chemical">Cost of chemical:</string>
+    <string name="vnd_m3">VND/m3</string>
+    <string name="usd_m3">USD/m3</string>
+    <string name="about_information_calculation">*Above information from calculation actual might be a little bit different</string>
+    <string name="list_work">List work</string>
+    <string name="calendar">Calendar team work</string>
+    <string name="notification">Notification</string>
+    <string name="report">Report</string>
+    <string name="logout">Logout</string>
+    <string name="all_list_work">All list work</string>
+    <string name="my_list_work">My list work</string>
+    <string name="customer_name">Customer name</string>
+    <string name="raw_water_type">Raw water Type</string>
+    <string name="products">Products</string>
+    <string name="error_report">Detail Error</string>
+    <string name="date_of_maintenance">Date of maintenance</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="submit">Submit</string>
+    <string name="upload_image_containing_problem">Upload image file containing your problem system</string>
+    <string name="contact_with_ntesco">contact with ntesco</string>
+    <string name="direction_of_ntesco">direction of ntesco</string>
+    <string name="ntesco_address_vn">39B Truong Son street, Ward 4, Tan Binh District , HCMC Viet Nam</string>
+    <string name="connect_via_social_network">connect via social network</string>
+    <string name="facebook">Facebook</string>
+    <string name="linked_in">Linked In</string>
+    <string name="twitter">Twitter</string>
+    <string name="youtube">Youtube</string>
+    <string name="default_notification_channel_id">2019</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="update_profile">Update</string>
+    <string name="change_password_">Change password?</string>
+    <string name="change_password">Change password</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm password</string>
+    <string name="alert">Alert</string>
+    <string name="ok">Ok</string>
+    <string name="from_date">From date</string>
+    <string name="to_date">To date</string>
+    <string name="complete">Complete</string>
+    <string name="enter_email_to_reset">Please enter your registered email to reset your password</string>
+    <string name="registered_email">Registered email</string>
+    <string name="add_address">Location</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="type">Input</string>
+    <string name="select">Select</string>
+    <string name="select_language">Select language</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="english">English</string>
+    <string name="view_report">View report</string>
+    <string name="not_confirm">Not Confirm</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="completed">Completed</string>ƒ
+    <string name="canceled">Canceled</string>
+    <string name="report_problem">Report problem</string>
+    <string name="get_current_location">Get current location</string>
+    <string name="add">+ Add</string>
+    <string name="waiting">Waiting</string>
+    <!-- message alert -->
+    <string name="user_name_is_empty">Please enter your user name</string>
+    <string name="password_is_empty">Please enter your password </string>
+    <string name="re_enter_password_is_empty">Please enter re-enter password </string>
+    <string name="first_name_is_empty">Please enter your First name</string>
+    <string name="last_name_is_empty">Please enter your Last name</string>
+    <string name="current_password_is_empty">Please enter your current password</string>
+    <string name="password_confirm_pass_not_similar">Password and confirm  password are not the same</string>
+    <string name="email_is_invalid">Email is wrong the format</string>
+    <string name="email_is_empty">Please enter your Email</string>
+    <string name="country_is_empty">Please enter your Country</string>
+    <string name="location_is_empty">Please enter your Location</string>
+    <string name="phone_is_empty">Please enter your Phone </string>
+    <string name="company_is_empty">Please enter your Company </string>
+    <string name="current_pass_is_empty">Please enter your current passsword </string>
+    <string name="new_pass_is_empty">Please enter your new passsword </string>
+    <string name="verify_pass_is_empty">Please enter your confirm passsword </string>
+    <string name="new_password_confirm_pass_not_similar">New password and confirm password are not the same</string>
+    <string name="new_password_length_longer_6">New password must be greater than or equal to 6 characters</string>
+    <string name="error_report_is_empty">Please enter your error report </string>
+    <string name="image_error_is_not_uploaded">Please upload your image</string>
+    <string name="raw_water_is_not_selected">Please select Raw Water Type</string>
+    <string name="product_is_not_selected">Please select Products</string>
+    <string name="location_is_not_selected">Please select your location </string>
+    <string name="full_name_is_empty">Please enter your full name </string>
+    <string name="title_contact_is_empty">Please enter your title</string>
+    <string name="content_contact_is_empty">Please enter your content</string>
+    <string name="from_date_is_not_select">Please select from date </string>
+    <string name="to_date_is_not_select">Please select to date </string>
+    <string name="customer_name_is_empty">Please enter your name</string>
+    <string name="network_error">Network error!</string>
+    <string name="first_name_length_longer_2">The first name must be at least 2 characters</string>
+    <string name="last_name_length_longer_2">The last name must be at least 2 characters</string>
+    <string name="country_length_longer_2">The country must be at least 2 characters</string>
+    <string name="location_length_longer_2">The location must be at least 2 characters</string>
+    <string name="company_length_longer_2">The company must be at least 2 characters</string>
+    <string name="chemical_name_is_empty">Please enter chemical name</string>
+    <string name="concentration_is_empty">Please enter concentration</string>
+    <string name="specific_gravity_is_empty">Please enter Specific Gravity</string>
+    <string name="required_chemical_is_empty">Please enter required chemical</string>
+    <string name="water_flow_rate_is_empty">Please enter water flow rate</string>
+    <string name="cost_chemical_is_empty">Please enter cost of chemical</string>
+    <string name="chemical_stock_is_empty">Please enter chemical stock solution</string>
+    <string name="phone_number_length_minium_10">Phone numbers must be at least 10 characters</string>
+    <string name="phone_number_contain_special_character">Phone numbers contain special character</string>
+    <string name="address_not_select">Please select your address</string>
+    <string name="user_is_log_in_other_divice">User is logged in other device</string>
+    <string name="type_your_message">Type your message... </string>
+    <string name="new_report">New</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="forms_processing">Forms processing</string>
+    <string name="warranty_status">Warranty status</string>
+    <string name="longer_warranty">Longer warranty</string>
+    <string name="out_of_warranty">Out of warranty</string>
+    <string name="employees_handling">Contact technical</string>
+    <string name="implement">Implement</string>
+    <string name="upload_image_processing">Upload image file containing product processing</string>
+    <string name="note">Note</string>
+    <string name="review_comment">Reviews and comments</string>
+    <string name="hint_review_comment">Enter your reviews and comments</string>
+    <string name="forms_processing_is_not_selected">Please select Forms processing</string>
+    <string name="warranty_status_is_not_selected">Please select Warranty status</string>
+    <string name="product_image_processed_is_empty">Please upload image product processing</string>
+    <string name="note_is_empty">Please enter note</string>
+    <string name="customer_comment_is_empty">Please enter your comment</string>
+    <string name="check_list">Checklist</string>
+    <string name="product_specification">Product specification</string>
+    <string name="current_status">Current status</string>
+    <string name="delete_all_notify">Are you sure you want to delete all notifications?</string>
+    <string name="delete_all">Delete all</string>
+    <string name="view_detail">View detail</string>
+    <string name="add_product">+ Add product</string>
+    <string name="add_product_specification">+ Add product specification</string>
+    <!-- message no data -->
+    <string name="no_data">No data</string>
+
+    <string name="google_maps_key">AIzaSyBrwOR7fBKBr1JMpFr6r1FX9UnbcY16qcU</string>
+
+    <string name="FACEBOOK_APP_ID">1396197847209627</string>
+
+    <!-- Google map -->
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">b5df65415552b3cd3b4dff6adfcfc4f0</string>
+    <!-- Facebook -->
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="location_updated">Location Updated: %1$s</string>
+    <string name="launch_activity">Launch activity</string>
+
+
+    <string name="location_unknown">Location unknown</string>
+
+
+    <string name="location_updates_label">Location Updates</string>
+
+    <string name="remove_location_updates">Remove location updates</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for corefunctionality.</string>
+    <string name="settings">Settings</string>
+    <string name="new_text">New</string>
+    <string name="confirmed_text">Confirmed</string>
+    <string name="processing_text">Processing</string>
+    <string name="completed_text">Completed</string>
+    <string name="delete">Delete</string>
+    <string name="processed_text">Processed</string>
+    <string name="processing_status_text">In process</string>
+    <string name="assigned">Assigned</string>
+    <string-array name="main_tab_layout">
+        <item>Home</item>
+        <item>Chat bot</item>
+        <item>Notification</item>
+        <item>Contact</item>
+    </string-array>
+    <string-array name="home_category">
+        <item>About us</item>
+        <item>Service</item>
+        <item>News &amp; Event</item>
+        <item>Solution application</item>
+        <item>Chemical calculation</item>
+        <item>Water treatment Knowledge</item>
+
+    </string-array>
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+    <string-array name="weeks">
+        <item>Week  </item>
+        <item>Week 1</item>
+        <item>Week 2</item>
+        <item>Week 3</item>
+        <item>Week 4</item>
+        <item>Week 5</item>
+    </string-array>oyer
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="type_user">
+        <item>Customer</item>
+        <item>Technical</item>
+        <item>Manager</item>
+        <item>Employee</item>
+    </string-array>
+
+</resources>

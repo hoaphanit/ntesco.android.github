@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <include layout="@layout/main_header"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/main_header"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.vn.ntesco.views.NTesCoViewPager
+                android:layout_above="@+id/appBarLayout"
+                android:id="@+id/mainViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg_tab_layout"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/mainTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_tab_layout"
+                    app:tabGravity="fill"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="0dp"
+                    app:tabPaddingEnd="0dp"
+                    app:tabPaddingStart="0dp" >
+
+                </com.google.android.material.tabs.TabLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

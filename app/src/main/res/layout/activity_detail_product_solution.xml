@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailProductSolutionActivity">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_view_pager_home"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:scaleType="centerCrop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_big"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/tvSolutionContent"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/font_normal" />
+    </ScrollView>
+
+
+    <com.vn.ntesco.views.NTesCoTextView
+        android:id="@+id/btnViewMore"
+        style="@style/ntesco_text_view_style"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_button_orange"
+        android:minWidth="@dimen/width_button"
+        android:paddingLeft="@dimen/padding_big"
+        android:paddingTop="@dimen/padding_smallXX"
+        android:paddingRight="@dimen/padding_big"
+        android:paddingBottom="@dimen/padding_smallXX"
+        android:text="@string/view_more"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:NTesCoTextViewFont="Bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.vn.ntesco.views.NTesCoTextView
+            android:id="@+id/tvLabel"
+            style="@style/ntesco_text_view_style"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@color/blue_medium"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_smallXX"
+            android:paddingBottom="@dimen/padding_smallXX"
+            android:text="@string/want_more_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            app:NTesCoTextViewFont="Regular"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvLabel"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:src="@mipmap/chat_bot"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+</LinearLayout>
